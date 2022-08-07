@@ -43,4 +43,16 @@ int prinnhex(va_list arguments, char *buf, unsigned int ibuf);
 int prinnupx(va_list arguments, char *buf, unsigned int ibuf);
 int prinsint(va_list arguments, char *buf, unsigned int ibuf);
 int prinpint(va_list arguments, char *buf, unsigned int ibuf);
+int prinlint(va_list arguments, char *buf, unsigned int ibuf);
+int prinlunt(va_list arguments, char *buf, unsigned int ibuf);
+int prinloct(va_list arguments, char *buf, unsigned int ibuf);
+int prinlhex(va_list arguments, char *buf, unsigned int ibuf);
+int prinlupx(va_list arguments, char *buf, unsigned int ibuf);
+int prinhint(va_list arguments, char *buf, unsigned int ibuf);
+int prinhunt(va_list arguments, char *buf, unsigned int ibuf);
+int prinhoct(va_list arguments, char *buf, unsigned int ibuf);
+int prinhhex(va_list arguments, char *buf, unsigned int ibuf);
+int prinhupx(va_list arguments, char *buf, unsigned int ibuf);
+char *fill_long_oct_array(char *bnr, char *oct);
+char *fill_short_oct_array(char *bnr, char *oct);
 #endif
