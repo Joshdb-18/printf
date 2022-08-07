@@ -13,7 +13,7 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"b", print_bnr}, {"d", print_int},
 		{"u", print_unt}, {"o", print_oct},
 		{"x", print_hex}, {"X", print_upx},
-		{"S", print_usr},
+		{"S", print_usr}, {"p", print_add},
 		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
@@ -49,7 +49,8 @@ int ev_print_func(const char *s, int index)
 		{"c", print_chr}, {"s", print_str}, {"%", print_prg},
 		{"i", print_int}, {"d", print_int}, {"b", print_bnr},
 		{"u", print_unt}, {"o", print_oct}, {"x", print_hex},
-		{"X", print_upx}, {"S", print_usr}, {NULL, NULL},
+		{"X", print_upx}, {"S", print_usr}, {"p", print_add},
+		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
 
