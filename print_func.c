@@ -10,8 +10,10 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 	print_t pr[] = {
 		{"c", print_chr}, {"s", print_str},
 		{"%", print_prg}, {"i", print_int},
-		{"b", print_bnr},
-		{"d", print_int}, {NULL, NULL},
+		{"b", print_bnr}, {"u", print_unt},
+		{"d", print_int}, {"o", print_oct},
+		{"x", print_hex}, {"X", print_upx},
+		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
 
@@ -45,7 +47,8 @@ int ev_print_func(const char *s, int index)
 	print_t pr[] = {
 		{"c", print_chr}, {"s", print_str}, {"%", print_prg},
 		{"i", print_int}, {"d", print_int}, {"b", print_bnr},
-		{NULL, NULL},
+		{"u", print_unt}, {"o", print_oct}, {"x", print_hex},
+		{"X", print_upx}, {NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
 
