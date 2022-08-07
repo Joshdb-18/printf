@@ -19,7 +19,7 @@ char *fill_oct_array(char *bnr, char *oct)
 			limit = 4;
 		else
 			limit = 2;
-		for (op = 0, j = 1; j <= limit; j = 2, i--)
+		for (op = 0, j = 1; j <= limit; j *= 2, i--)
 			op = ((bnr[i] - '0') * j) + op;
 		i++;
 		oct[ioct] = op + '0';
@@ -48,7 +48,7 @@ char *fill_hex_array(char *bnr, char *hex, int isupp, int limit)
 		toletter = 87;
 	for (i = (limit * 4) - 1; i >= 0; i--)
 	{
-		for (op = 0, j = 1; j <= 8; j = 2, i--)
+		for (op = 0, j = 1; j <= 8; j *= 2, i--)
 			op = ((bnr[i] - '0') * j) + op;
 		i++;
 		if (op < 10)
