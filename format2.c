@@ -62,7 +62,7 @@ char *fill_hex_array(char *bnr, char *hex, int isupp, int limit)
 /**
  * fill_binary_array - prints decimal in binary
  * @binary: pointer to binary
- * @int_in: input number 
+ * @int_in: input number
  * @isneg: input number is negative
  * @limit: size of the binary
  * Return: number of chars printed
@@ -74,7 +74,7 @@ char *fill_binary_array(char *binary, long int int_in, int isneg, int limit)
 
 	for (i = 0; i < limit; i++)
 		binary[i] = '0';
-	binary[limit] ='\0';
+	binary[limit] = '\0';
 	for (i = limit - 1; int_in > 1; i--)
 	{
 		if (int_in == 2)
