@@ -1,7 +1,7 @@
-##Printf
+###Printf
 
 ****A simple printf function carried out by Oluwafemi Damilola Joshua and Renish Okago****
 
-##Format
+###Format
 
 ****%x, %X, %d, %i, %p, %o, %R, %r, %b ... formatting****
