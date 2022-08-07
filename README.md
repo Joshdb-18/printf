@@ -1,6 +1,6 @@
 ## Making a Printf Group project
 
-****A simple printf function carried out by Oluwafemi Damilola Joshua and Renish Okago****
+***A simple printf function carried out by Oluwafemi Damilola Joshua and Renish Okago***
 
 ## Format
 
