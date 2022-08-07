@@ -25,6 +25,7 @@ char *fill_binary_array(char *binary, long int int_in, int isneg, int limit)
 	}
 	if (int_in != 0)
 		binary[i] = '1';
+	
 	if (isneg)
 	{
 		for (i = 0; binary[i]; i++)
