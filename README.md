@@ -153,4 +153,7 @@ Conversion specifiers to handle: d, i, u, o, x, X
 #
 ****All the above options work well together.****
 
+## Authors
+1. Oluwafemi Damilola Joshua
+2. Renish Okago
 
