@@ -75,7 +75,7 @@ int ev_print_func(const char *s, int index)
 		{"+o", print_oct}, {"+x", print_hex}, {"+X", print_upx},
 		{" i", prinsint}, {" d", prinsint}, {" u", print_unt},
 		{" o", print_oct}, {" x", print_hex}, {" X", print_upx},
-		{" +i", prinpint}, {" +d", prinpint},
+		{" +i", prinpint}, {" +d", prinpint}, {"l", print_prg},
 		{"+ i", prinpint}, {"+ d", prinpint}, {" %", print_prg},
 		{"li", prinlint}, {"ld", prinlint}, {"lu", prinlunt},
 		{"lo", prinloct}, {"lx", prinlhex}, {"lX", prinlupx},
