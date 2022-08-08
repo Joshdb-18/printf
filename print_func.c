@@ -31,7 +31,7 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"lX", prinlupx}, {"hi", prinhint},
 		{"hd", prinhint}, {"hu", prinhunt},
 		{"ho", prinhoct}, {"hx", prinhhex},
-		{"hX", prinhupx}
+		{"hX", prinhupx},
 		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
