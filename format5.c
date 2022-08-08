@@ -161,6 +161,7 @@ int prinhupx(va_list arguments, char *buf, unsigned int ibuf)
 			count++;
 		}
 	}
+	
 	free(binary);
 	free(hexadecimal);
 
