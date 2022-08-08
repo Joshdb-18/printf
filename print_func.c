@@ -15,6 +15,7 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"x", print_hex}, {"X", print_upx},
 		{"S", print_usr}, {"p", print_add},
 		{"#o", prinnoct}, {"#x", prinnhex},
+		{"l", print_prg},
 		{"#X", prinnupx}, {"#i", print_int},
 		{"#d", print_int}, {"#u", print_unt},
 		{"+i", prinpint}, {"+d", prinpint},
