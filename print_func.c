@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * get_print_func - selects the correct function to perform the operation.
- * 
+ *
  * @s: argument indentifier
  * @index: index for argument indentifier
  * Return: pointer to a function.
@@ -79,8 +79,8 @@ int ev_print_func(const char *s, int index)
 		{"+d", prinpint}, {"+u", print_unt}, {"+o", print_oct},
 		{"+x", print_hex}, {"+X", print_upx}, {" i", prinsint},
 		{" d", prinsint}, {" u", print_unt}, {" o", print_oct},
-		{" x", print_hex}, {" X", print_upx},
-		{"%", print_prg}, {"l", print_prg},
+		{" x", print_hex}, {" X", print_upx}, {"R", print_rot},
+		{"r", print_rev}, {"%", print_prg}, {"l", print_prg},
 		{"h", print_prg}, {" +i", prinpint}, {" +d", prinpint},
 		{"+ i", prinpint}, {"+ d", prinpint}, {" %", print_prg},
 		{NULL, NULL},
