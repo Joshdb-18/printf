@@ -101,6 +101,8 @@ int print_hexadecimal(va_list types, char buffer[],
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags_ch, int width, int precision, int size)
+ * Return: result
+ */
 {
 	int i = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(types, unsigned long int);
@@ -131,6 +133,7 @@ int print_hexadecimal(va_list types, char buffer[],
 
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
+/*
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
