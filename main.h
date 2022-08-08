@@ -55,4 +55,7 @@ int prinhhex(va_list arguments, char *buf, unsigned int ibuf);
 int prinhupx(va_list arguments, char *buf, unsigned int ibuf);
 char *fill_long_oct_array(char *bnr, char *oct);
 char *fill_short_oct_array(char *bnr, char *oct);
+int get_width(const char *format, int *i, va_list list);
+int get_precision(const char *format, int *i, va_list list);
+
 #endif
