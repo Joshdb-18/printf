@@ -15,7 +15,6 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"x", print_hex}, {"X", print_upx},
 		{"S", print_usr}, {"p", print_add},
 		{"#o", prinnoct}, {"#x", prinnhex},
-		{"l", print_prg},
 		{"#X", prinnupx}, {"#i", print_int},
 		{"#d", print_int}, {"#u", print_unt},
 		{"+i", prinpint}, {"+d", prinpint},
@@ -32,7 +31,7 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"lX", prinlupx}, {"hi", prinhint},
 		{"hd", prinhint}, {"hu", prinhunt},
 		{"ho", prinhoct}, {"hx", prinhhex},
-		{"hX", prinhupx}, {"h", print_prg},
+		{"hX", prinhupx}
 		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
@@ -75,13 +74,12 @@ int ev_print_func(const char *s, int index)
 		{"+o", print_oct}, {"+x", print_hex}, {"+X", print_upx},
 		{" i", prinsint}, {" d", prinsint}, {" u", print_unt},
 		{" o", print_oct}, {" x", print_hex}, {" X", print_upx},
-		{" +i", prinpint}, {" +d", prinpint}, {"l", print_prg},
+		{" +i", prinpint}, {" +d", prinpint},
 		{"+ i", prinpint}, {"+ d", prinpint}, {" %", print_prg},
 		{"li", prinlint}, {"ld", prinlint}, {"lu", prinlunt},
 		{"lo", prinloct}, {"lx", prinlhex}, {"lX", prinlupx},
 		{"hi", prinhint}, {"hd", prinhint}, {"hu", prinhunt},
 		{"ho", prinhoct}, {"hx", prinhhex}, {"hX", prinhupx},
-		{"h", print_prg},
 		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
